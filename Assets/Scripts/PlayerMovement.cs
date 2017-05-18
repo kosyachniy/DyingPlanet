@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,8 +46,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             l = true;
             r = false;
+			//DateTime tim = DateTime.Now;
             rb.velocity = new Vector3(5, 0, 0);
             //pos = new Vector3(rb.position.x + 5, rb.position.y, rb.position.z);
         }
+		//DateTime x = DateTime.Now;
     }
 }
