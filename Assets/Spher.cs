@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spher : MonoBehaviour {
-	rigidbody myRigidbody;
-	// Use this for initialization
+	Rigidbody myRigidbody;
+
 	void Start () {
-		myRigidbody = GetComponent<rigidbody>();
+		myRigidbody = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (myRigidbody.position.y < 3) Destroy(gameObject);
 	}
