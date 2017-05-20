@@ -84,13 +84,10 @@ public class SwipeControl : MonoBehaviour {
                             Debug.Log("Left Swipe");
                             }
                         }
-                        else
-                        {   //Если вертикальное движение больше, чнм горизонтальное движение
-                            if (lp.y > fp.y)  //Если движение вверх
-                            {
+                        else {   //Если вертикальное движение больше, чнм горизонтальное движение
+						if (lp.y > fp.y) { //Если движение вверх
                             //Свайп вверх  
-                            if (rb.position.y < 5)//Высота прыжка
-                            {
+							if (rb.position.y < 5) { //Высота прыжка
                                 rb.velocity = new Vector3(rb.velocity.x, 5, rb.velocity.z);
                             }
                             Debug.Log("Up Swipe");
