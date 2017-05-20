@@ -6,8 +6,9 @@ public class Panel : MonoBehaviour {
     public float speed;
     float WaitTime = 0.3f;
     List<GameObject> panels = new List<GameObject>();
+	public bool t;
 
-	void Start () {}
+	void Start () {t = true;}
 
 	void Update () {
         WaitTime -= Time.deltaTime;
@@ -20,9 +21,11 @@ public class Panel : MonoBehaviour {
             panels.Add(cube);
             WaitTime = 0.3f;
         }
-        Vector3 movement = new Vector3(0, 0, speed * Time.deltaTime);
-        for (int i = 0; i < panels.Count; i++) {
-           panels[i].transform.position -= movement;
+		if (t) {
+			Vector3 movement = new Vector3(0, 0, speed * Time.deltaTime);
+			for (int i = 0; i < panels.Count; i++) {
+				panels [i].transform.position -= movement;
+			}
         }
     }
 }
