@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Spher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SwipeControl.cs">
     <Files>
-      <File FileName="Assets/Spher.cs" Line="16" Column="1" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SwipeControl.cs" Line="88" Column="26" />
+      <File FileName="Assets/Spher.cs" Line="16" Column="1" />
       <File FileName="Assets/Scripts/CameraControl.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MovePanel.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Panel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SwipeControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
